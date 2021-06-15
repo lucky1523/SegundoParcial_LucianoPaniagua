@@ -9,12 +9,12 @@ public class Administrativo extends PersonaDelColegio{
 
     @Override
     public void send(String message) {
-
+        mediator.send(message,this);
     }
 
     @Override
     public void messageReceived(String message) {
-
+        System.out.println("INFO - El administrativo recibio el mensaje > "+message);
     }
 
     public String getNombre() {

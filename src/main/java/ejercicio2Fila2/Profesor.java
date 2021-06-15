@@ -9,12 +9,13 @@ public class Profesor extends PersonaDelColegio{
 
     @Override
     public void send(String message) {
+        mediator.send(message,this);
 
     }
 
     @Override
     public void messageReceived(String message) {
-
+        System.out.println("INFO - El profesor recibio el mensaje > "+message);
     }
 
     public String getNombre() {
