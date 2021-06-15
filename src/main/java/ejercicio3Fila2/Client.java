@@ -2,6 +2,7 @@ package ejercicio3Fila2;
 
 public class Client {
     public static void main (String[] args){
+        //  EXAMEN TERMINADO
         PaginaWeb paginaWeb = new PaginaWeb();
         Usuario u1 = new Usuario("video",(new Persona("juan","12345")));
         Usuario u2 = new Usuario("imagen",(new Persona("maria","76543")));

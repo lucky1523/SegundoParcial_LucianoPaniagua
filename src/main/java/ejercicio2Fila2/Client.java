@@ -2,6 +2,7 @@ package ejercicio2Fila2;
 
 public class Client {
     public static void main (String[] args){
+        //  EXAMEN TERMINADO
         Mediator mediator= new Mediator();
         Administrativo administrativo= new Administrativo(mediator);
         Alumno alumno= new Alumno(mediator);
