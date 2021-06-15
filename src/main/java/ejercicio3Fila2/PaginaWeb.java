@@ -24,8 +24,8 @@ public class PaginaWeb implements IPaginaWeb{
     @Override
     public void notifyObserver(Publicacion publicacion) {
         for (IUsuario usuario:usuarioList) {
-            if(usuario.getTipo().equals(publicacion.g)){
-
+            if(usuario.getTipo().equals(publicacion.getTipo())){
+                usuario.update("post nuevo: "+publicacion.getTipo(),publicacion);
             }
         }
     }
